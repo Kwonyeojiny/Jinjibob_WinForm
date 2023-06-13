@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D08BA90-80E1-49A2-8239-533BE476700C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>진지밥_권여진김수지</RootNamespace>
+    <AssemblyName>진지밥_권여진김수지</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1_시작화면.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_시작화면.Designer.cs">
+      <DependentUpon>1_시작화면.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2_시작오프닝.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2_시작오프닝.Designer.cs">
+      <DependentUpon>2_시작오프닝.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3_game_동생모으기.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3_game_동생모으기.Designer.cs">
+      <DependentUpon>3_game_동생모으기.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3_게임설명.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3_게임설명.Designer.cs">
+      <DependentUpon>3_게임설명.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3_게임오버.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3_게임오버.Designer.cs">
+      <DependentUpon>3_게임오버.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4_스토리.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4_스토리.Designer.cs">
+      <DependentUpon>4_스토리.cs</DependentUpon>
+    </Compile>
+    <Compile Include="5_game_벽피하기.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5_game_벽피하기.Designer.cs">
+      <DependentUpon>5_game_벽피하기.cs</DependentUpon>
+    </Compile>
+    <Compile Include="5_게임설명.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5_게임설명.Designer.cs">
+      <DependentUpon>5_게임설명.cs</DependentUpon>
+    </Compile>
+    <Compile Include="5_게임오버.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5_게임오버.Designer.cs">
+      <DependentUpon>5_게임오버.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6_스토리.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6_스토리.Designer.cs">
+      <DependentUpon>6_스토리.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7_game_과일먹기.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7_game_과일먹기.Designer.cs">
+      <DependentUpon>7_game_과일먹기.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7_게임설명.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7_게임설명.Designer.cs">
+      <DependentUpon>7_게임설명.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7_게임오버.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7_게임오버.Designer.cs">
+      <DependentUpon>7_게임오버.cs</DependentUpon>
+    </Compile>
+    <Compile Include="8_엔딩.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="8_엔딩.Designer.cs">
+      <DependentUpon>8_엔딩.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="진지밥소개.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="진지밥소개.Designer.cs">
+      <DependentUpon>진지밥소개.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="1_시작화면.resx">
+      <DependentUpon>1_시작화면.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2_시작오프닝.resx">
+      <DependentUpon>2_시작오프닝.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3_game_동생모으기.resx">
+      <DependentUpon>3_game_동생모으기.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3_게임설명.resx">
+      <DependentUpon>3_게임설명.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3_게임오버.resx">
+      <DependentUpon>3_게임오버.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4_스토리.resx">
+      <DependentUpon>4_스토리.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5_game_벽피하기.resx">
+      <DependentUpon>5_game_벽피하기.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5_게임설명.resx">
+      <DependentUpon>5_게임설명.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5_게임오버.resx">
+      <DependentUpon>5_게임오버.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6_스토리.resx">
+      <DependentUpon>6_스토리.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7_game_과일먹기.resx">
+      <DependentUpon>7_game_과일먹기.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7_게임설명.resx">
+      <DependentUpon>7_게임설명.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7_게임오버.resx">
+      <DependentUpon>7_게임오버.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="8_엔딩.resx">
+      <DependentUpon>8_엔딩.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="진지밥소개.resx">
+      <DependentUpon>진지밥소개.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\메인.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\메인1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\메인_점프.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\메인_점프2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\동굴.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\베비_움짤_bright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\쌀알.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\무당벌레.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\게임 설명.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\말풍선.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
